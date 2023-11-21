@@ -19,6 +19,12 @@ namespace PROG301_DI_AerialVehicle.Models
             DefaultAltitudeChange = 1000;
         }
 
+        public AerialVehicle(IEngine engine)
+        {
+            DefaultAltitudeChange = 1000;
+            Engine = engine;
+        }
+
         public virtual void StartEngine()
         {
             if (Engine == null) { throw new ArgumentNullException(nameof(Engine)); }

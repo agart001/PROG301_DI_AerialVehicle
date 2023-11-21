@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace PROG301_DI_AerialVehicle.Models.Engines
 {
-    public class JetEngine : Engine
+    public class BaseEngine : Engine
     {
-        public JetEngine() : base() { }
+        public BaseEngine() : base() { }
     }
 }

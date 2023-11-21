@@ -16,7 +16,7 @@ namespace PROG301_DI_AerialVehicle.Containers
     {
         public static void RegisterType(IUnityContainer container)
         {
-            container.RegisterType<IEngine, JetEngine>();
+            container.RegisterType<IEngine, BaseEngine>();
 
             container.RegisterType<Airplane>(new InjectionConstructor(new JetEngine()));
             container.RegisterType<Drone>(new InjectionConstructor(new UAVEngine()));

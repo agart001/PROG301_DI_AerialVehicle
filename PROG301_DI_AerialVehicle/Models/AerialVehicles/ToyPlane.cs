@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using PROG301_DI_AerialVehicle.Interfaces;
 using PROG301_DI_AerialVehicle.Models.Engines;
 
 namespace PROG301_DI_AerialVehicle.Models.AerialVehicles
@@ -16,6 +17,14 @@ namespace PROG301_DI_AerialVehicle.Models.AerialVehicles
         public ToyPlane()
         {
             Engine = new RubberBandEngine();
+
+            MaxAltitude = 50;
+            DefaultAltitudeChange = 5;
+        }
+
+        public ToyPlane(IEngine engine)
+        {
+            Engine = engine;
 
             MaxAltitude = 50;
             DefaultAltitudeChange = 5;

@@ -8,5 +8,6 @@ namespace PROG301_DI_AerialVehicle.Models.Engines
 {
     public class UAVEngine : Engine
     {
+        public UAVEngine() : base() { }
     }
 }

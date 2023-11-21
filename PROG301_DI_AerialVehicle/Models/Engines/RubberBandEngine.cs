@@ -15,7 +15,7 @@ namespace PROG301_DI_AerialVehicle.Models.Engines
             get { return NumWinds >= NumWindsFullyWound; } 
         }
 
-        public RubberBandEngine()
+        public RubberBandEngine() : base()
         {
             NumWindsFullyWound = 20;
         }
