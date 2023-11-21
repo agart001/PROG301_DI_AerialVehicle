@@ -6,9 +6,9 @@ using PROG301_DI_AerialVehicle.Interfaces;
 
 namespace PROG301_DI_AerialVehicle.Models
 {
-    public abstract class AerialVehicle : IFlyable
+    public abstract class AerialVehicle : IFlyable, IAboutable
     {
-        public Engine? Engine { get; set; }
+        public IEngine? Engine { get; set; }
         public bool IsFlying { get; set; }
         public int MaxAltitude { get; set; }
         public int CurrentAltitude { get; set; }
@@ -92,7 +92,7 @@ namespace PROG301_DI_AerialVehicle.Models
             return Engine.About();
         }
 
-        public virtual string About()
+        public string About()
         {
             string about = string.Format("This {0} has a max altitude of {1} ft. \nIt's current altitude is {2} ft. \n{3}", 
                 this.ToString(), this.MaxAltitude.ToString(), this.CurrentAltitude, this.getEngineStartedString());

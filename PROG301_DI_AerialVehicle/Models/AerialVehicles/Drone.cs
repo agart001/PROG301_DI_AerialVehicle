@@ -9,7 +9,6 @@ namespace PROG301_DI_AerialVehicle.Models.AerialVehicles
 {
     public class Drone : AerialVehicle
     {
-        
         public Drone()
         {
             Engine = new UAVEngine();

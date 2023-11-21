@@ -6,7 +6,7 @@ using PROG301_DI_AerialVehicle.Models.Engines;
 
 namespace PROG301_DI_AerialVehicle.Models.AerialVehicles
 {
-    public class ToyPlane : Airplane
+    public class ToyPlane : AerialVehicle
     {
         bool isWoundUP
         {
@@ -75,7 +75,7 @@ namespace PROG301_DI_AerialVehicle.Models.AerialVehicles
             return woundUp;
         }
 
-        public override string About()
+        public new string About()
         {
             return base.About() + "\n" + this.getWindUpString();
         }

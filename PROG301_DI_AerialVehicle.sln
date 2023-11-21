@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROG301_DI_AerialVehicle", "PROG301_DI_AerialVehicle\PROG301_DI_AerialVehicle.csproj", "{5520D070-868B-484E-B805-08665A1D4A44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{2C4CA0FB-7507-4B3F-A799-18656046126D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5520D070-868B-484E-B805-08665A1D4A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5520D070-868B-484E-B805-08665A1D4A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5520D070-868B-484E-B805-08665A1D4A44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4CA0FB-7507-4B3F-A799-18656046126D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4CA0FB-7507-4B3F-A799-18656046126D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4CA0FB-7507-4B3F-A799-18656046126D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4CA0FB-7507-4B3F-A799-18656046126D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

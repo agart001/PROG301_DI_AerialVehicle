@@ -6,7 +6,7 @@ using System.Text;
 
 namespace PROG301_DI_AerialVehicle.Models
 {
-    public class Engine : IEngine
+    public abstract class Engine : IEngine
     {
         public bool IsStarted { get; set; }
 
